@@ -1,0 +1,143 @@
+$global-muted-background: #eceff4;
+$global-primary-background: #2D4B65;
+$global-secondary-background: #E5901A;
+$navbar-background: white;
+
+
+@import '../../node_modules/uikit/src/scss/variables-theme.scss';
+@import '../../node_modules/uikit/src/scss/mixins-theme.scss';
+@import '../../node_modules/uikit/src/scss/uikit-theme.scss';
+
+
+%headings{
+	text-transform: uppercase; 
+}
+h1,h2, h3, h4, h5, h6{
+	@extend %headings !optional;
+}
+
+
+h1, h2, h3 ,h4, h5, li, a{
+	font-family: "Open Sans SemiBold",  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+
+}
+.mainNav > li > .uk-active{
+	
+	color: $global-secondary-background;
+	
+}
+
+p {
+	
+	font-family: "Lato", sans-serif;
+	font-size: 1.5em;
+}
+
+header {
+	 background: white;
+
+}
+
+
+
+footer {
+	background: $global-primary-background;
+	color: white;
+	height: 25vh;
+
+}
+
+.logo {
+	border: solid 1px;
+	margin-left: 10px;
+}
+
+.uk-navbar-nav > li > a{
+	color: $global-primary-background;
+
+	:hover{
+
+		color: $global-secondary-background;
+	}
+}
+
+.uk-navbar-nav > li > a:hover{
+	
+	color: $global-secondary-background;
+}
+
+.uk-navbar-nav > li > a.active{
+
+	color: $global-secondary-background;
+	
+	border-bottom: 1px solid $global-secondary-background;
+}
+.uk-input{
+	background: white;
+}
+
+.contact-form > .uk-input{
+	background-color: #3CBC8D;
+}
+
+
+.navBottom {
+	
+	box-shadow: 0px 2px 22px 1px rgba(0, 0, 0, 0.1);
+}
+
+.random{
+	background-image: url(../images/volunteer.jpg);
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: white;
+    -webkit-filter: opacity(.5) drop-shadow(0 0 0 yellow);
+  filter: opacity(.5) drop-shadow(0 0 0 $global-secondary-background);
+
+}
+.ran2{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	-webkit-filter: opacity(.5) drop-shadow(0 0 0 yellow);
+  filter: opacity(.5) drop-shadow(0 0 0 $global-secondary-background);
+}
+.uk-h4{
+	color: white;
+}
+.uk-card-body{
+	padding:0;
+}
+
+//CSS for Side nav in programs and About Us Page
+
+.secNav > li{
+	padding: 5px 0px 0px 10px;
+}
+.secNav > li > a{
+	
+	color: $global-primary-background;
+	
+}
+
+.secNav  > .uk-active  {
+	
+	color: white !important;
+	background:$global-secondary-background;
+}
+
+
+
+.programCon{
+	
+	background: $global-primary-background;
+	color: white;
+}
+
+
+
+
+
+
